@@ -1,0 +1,31 @@
+{
+  "name": "typescript-express",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "dotenvx": "dotenvx run -f env.${MODE:-local} --",
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "start": "node dist/index.js",
+    "dev": "npm run dotenvx -- nodemon ./src/index.ts",
+    "format-and-lint": "biome check .",
+    "format-and-lint:fix": "biome check . --write"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "dependencies": {
+    "@dotenvx/dotenvx": "^1.29.0",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "1.9.4",
+    "@tsconfig/node22": "^22.0.0",
+    "@types/express": "^5.0.0",
+    "@types/node": "^22.10.2",
+    "nodemon": "^3.1.7",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  }
+}

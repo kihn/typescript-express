@@ -1,0 +1,27 @@
+= typescript express
+:TOC:
+
+== Description
+
+Base for developing express with TypeScript
+
+== dependencies
+
+* dotenvx
+* nodemon
+* biomejs
+
+
+== usage
+
+[source,shell]
+----
+# install dependencies
+npm i
+
+# copy env.local.sample to env.local
+cp env.local.sample env.local
+
+# start development
+npm run dev
+----
